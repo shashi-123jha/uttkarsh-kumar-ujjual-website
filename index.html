@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Cohort</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <img src="Screenshot 2023-12-27 002612.png" alt="Profile" class="profile-pic-nav">
+    </div>
+    
+    <div class="navbar-middle">
+      <input type="text" placeholder="Type here to search..." class="search-bar">
+      <i class="fas fa-search search-icon"></i>
+    </div>
+
+    <div class="navbar-right">
+      <button class="btn signup">Signup</button>
+      <button class="btn login">Login</button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="profile-pic">
+        <img src="Screenshot 2023-12-27 002612.png" alt="Profile">
+      </div>
+      <ul class="menu">
+        <li><i class="fas fa-home"></i> Home</li>
+        <li><i class="fas fa-graduation-cap"></i> Courses</li>
+      </ul>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+      <!-- Carousel Section -->
+      <div class="carousel">
+        <div class="carousel-slides">
+          <div class="slide active">
+            <img src="image1.jpg" alt="Slide 1">
+          </div>
+          <div class="slide">
+            <img src="image2.jpg" alt="Slide 2">
+          </div>
+          <div class="slide">
+            <img src="image3.jpg" alt="Slide 3">
+          </div>
+        </div>
+        <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+        <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+      </div>
+
+      <!-- Banner Section -->
+      <div class="banner">
+        <img src="download.jpg" alt="Complete Web Development Cohort">
+        <div class="banner-text">
+          <h2>Complete Web Development</h2>
+          <ul>
+            <li><i class="fas fa-check"></i> Web development</li>
+            <li><i class="fas fa-check"></i> DevOps</li>
+            <li><i class="fas fa-check"></i> Projects</li>
+            <li><i class="fas fa-check"></i> Open source project setup</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
